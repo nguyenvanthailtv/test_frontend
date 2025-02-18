@@ -1,0 +1,464 @@
+@import "./variable.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  width: 100%;
+  max-width: 1616px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 35px 16px;
+}
+
+.left.card {
+  border-radius: 20px;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(180deg, #f7f7f8 0%, #8e887e 100%);
+}
+
+.card__feature {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  color: #1e1e1e;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%;
+  opacity: 0.4;
+}
+
+.card__type {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 31px;
+  position: relative;
+  z-index: 2;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.93px;
+}
+
+.card__title {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: Poppins;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -10.5px;
+}
+
+.card__img {
+  position: absolute;
+  width: 90%;
+  object-fit: cover;
+  inset: auto 0 0 5%;
+  z-index: 1;
+}
+
+.right__top {
+  padding: 44px 0 35px 0;
+  border-radius: 20px;
+  background: #f7f7f8;
+}
+
+.right__title {
+  padding: 0 120px;
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.93px;
+}
+
+.right__list {
+  margin-top: 85px;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.right__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 51px;
+}
+
+.right__item:not(.right__item:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.right__item__icon {
+  width: 48px;
+  height: 48px;
+  padding: 6px 12px;
+}
+
+.right__item__title {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.34px;
+}
+
+.right__bottom {
+  width: 100%;
+  height: 454px;
+  margin-top: 27px;
+  padding-top: 33px;
+  border-radius: 20px;
+  background: url("../images/img_1.png") lightgray 50% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right__btn {
+  display: flex;
+  width: 124px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 56px;
+  font-family: "Be Vietnam Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  background-color: #827c6c;
+  border: none;
+}
+
+.container-2 {
+  display: flex;
+  padding: 76px 0 119px 0;
+}
+
+.ctn2-col-1 {
+  width: 35%;
+  padding: 73px 99px 0 29px;
+}
+
+.ctn2-col-1__type {
+  color: #402c22;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+.ctn2-col-1__title {
+  margin-top: 15px;
+  color: #402c22;
+  font-family: Optima;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106%;
+  letter-spacing: -1px;
+}
+
+.products {
+  list-style: none;
+  padding-right: 46px;
+}
+
+.product-item {
+  padding: 20px 0;
+}
+
+.product-item:not(.product-item:first-child) {
+  border-top: 1px solid #d9d5d3;
+}
+
+.product-item__top {
+  cursor: pointer;
+  /* color: red; */
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.product-item__title {
+  flex: 1;
+  color: inherit;
+  font-family: "Optima nova LT Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122%;
+  letter-spacing: -0.44px;
+}
+
+.product-item__content {
+  height: auto;
+  /* max-height: 100vh; */
+  transition: all ease-in-out 200ms;
+  overflow: hidden;
+  max-height: 0;
+}
+
+
+
+.product-item__content p {
+  padding: 9px 49px 9px 0;
+  color: #402c22;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.product-item__icon {
+  cursor: pointer;
+}
+
+.product-item__icon .product-item__icon--open {
+  display: flex;
+}
+.product-item__icon .product-item__icon--close {
+  display: none;
+}
+
+.product-item__icon--open,
+.product-item__icon--close {
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item.show .product-item__content {
+  max-height: 100vh;
+}
+
+.product-item.show .product-item__icon--open {
+  display: none;
+}
+
+.product-item.show .product-item__icon--close {
+  display: flex;
+}
+
+
+
+/* .container-2 {
+  border-top: 1px solid #eee;
+} */
+
+.ctn2-col-2 {
+  width: 764px;
+  margin-right: 16px;
+}
+
+.ctn2-col-2 img {
+  width: 100%;
+  height: 851px;
+  object-fit: cover;
+}
+
+.ctn2-col-3 {
+  width: 484px;
+}
+
+.ctn2-col-3 img {
+  width: 100%;
+  height: 551px;
+  object-fit: cover;
+}
+
+.wrap {
+  background-color: #FFF9F5;
+}
+
+.container-3 {
+  margin: 0 auto;
+  max-width: 1728px;
+  padding: 32px 0 72px 0;
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.intro span {
+  color: #462B20;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding: 0 34px;
+  opacity: 0.85;
+  background-color: #FFF9F5;
+  position: relative;
+  z-index: 1;
+}
+
+.intro::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #F3EAE5;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.flex {
+  display: flex;
+  margin-top: 88px;
+}
+
+.ctn3-col-1, .ctn3-col-3 {
+  flex: 1;
+}
+
+.ctn3-col-2 {
+  width: 636px;
+}
+
+.block__title {
+  color: #462B20;
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 61px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.block-list {
+  display: flex;
+  list-style: none;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.block-item {
+  padding: 0 14px;
+  /* flex: 1; */
+  white-space: nowrap;
+  color: #462B20;
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.block-item:not(:first-child) {
+  opacity: 0.4;
+  border-left: 1px solid #F3EAE5;
+}
+
+.block-item:first-child {
+  padding-left: 0;
+}
+
+.block-item:last-child {
+  padding-right: 0;
+}
+
+.block__content {
+  margin-top: 20px;
+  color: #462B20;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.line {
+  width: 160px;
+  height: 1px;
+  background-color: #F3EAE5;
+  margin: 56px auto;
+}
+
+.flex img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.ctn3-col-1 {
+  padding-top: 66px;
+}
+
+.ctn3-col-3 {
+  padding-top: 24px;
+
+}
+
+.img-1 img {
+  width: 183px;
+  height: 257px;
+}
+
+.img-2 {
+  /* flex: 1; */
+  margin: 179px 0 0 56px;
+}
+
+.img-2 img {
+  width: 253px;
+  height: 363px;
+}
+
+.img-3 {
+  text-align: right;
+}
+
+.img-3 img {
+  width: 274px;
+  height: 385px;
+}
+
+.img-4 {
+  display: flex;
+  margin-top: 157px;
+  justify-content: center;
+}
+
+.img-4 img {
+  width: 184px;
+  height: 257px;
+}
