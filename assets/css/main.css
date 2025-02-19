@@ -24,7 +24,8 @@
   flex-direction: column;
   justify-content: end;
   /* background: linear-gradient(180deg, #DDD4C5 0%, #8e887e 100%); */
-  background: linear-gradient(to bottom, #f8f6f2, #a39c91);
+  /* background: linear-gradient(to bottom, #f8f6f2, #a39c91); */
+  background: linear-gradient(180deg, #f5f5f5 9%, #9e978c 100%);
 }
 
 .card__feature {
