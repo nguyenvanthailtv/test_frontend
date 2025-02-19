@@ -12,7 +12,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 27px;
   padding: 35px 16px;
 }
 
@@ -23,7 +23,8 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background: linear-gradient(180deg, #f7f7f8 0%, #8e887e 100%);
+  /* background: linear-gradient(180deg, #DDD4C5 0%, #8e887e 100%); */
+  background: linear-gradient(to bottom, #f8f6f2, #a39c91);
 }
 
 .card__feature {
@@ -60,15 +61,18 @@
   font-size: 150px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%;
+  line-height: 86%;
   letter-spacing: -10.5px;
 }
 
 .card__img {
   position: absolute;
-  width: 90%;
+  width: 86%;
   object-fit: cover;
-  inset: auto 0 0 5%;
+  /* inset: auto 0 0 5%; */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -101,7 +105,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 51px;
+  padding: 24px 67px;
 }
 
 .right__item:not(.right__item:last-child) {
@@ -111,10 +115,13 @@
 .right__item__icon {
   width: 48px;
   height: 48px;
-  padding: 6px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right__item__title {
+  margin-top: 8px;
   color: #1e1e1e;
   text-align: center;
   font-family: Poppins;
@@ -163,7 +170,7 @@
 
 .ctn2-col-1 {
   width: 35%;
-  padding: 73px 99px 0 29px;
+  padding: 73px 99px 0 59px;
 }
 
 .ctn2-col-1__type {
@@ -214,17 +221,19 @@
   flex: 1;
   color: inherit;
   font-family: "Optima nova LT Pro";
+  /* font-family:Inter; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 122%;
   letter-spacing: -0.44px;
+  text-transform: capitalize;
 }
 
 .product-item__content {
   height: auto;
   /* max-height: 100vh; */
-  transition: all ease-in-out 200ms;
+  transition: all ease-in-out 500ms;
   overflow: hidden;
   max-height: 0;
 }
@@ -239,6 +248,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 23px;
+  opacity: 0.8;
 }
 
 .product-item__icon {
@@ -280,7 +290,7 @@
 
 .ctn2-col-2 {
   width: 764px;
-  margin-right: 16px;
+  min-width: 764px;
 }
 
 .ctn2-col-2 img {
@@ -290,7 +300,9 @@
 }
 
 .ctn2-col-3 {
-  width: 484px;
+  margin-left: 16px;
+  width: 469px;
+  min-width: 469px;
 }
 
 .ctn2-col-3 img {
@@ -385,7 +397,7 @@
 
 .block-item:not(:first-child) {
   opacity: 0.4;
-  border-left: 1px solid #F3EAE5;
+  border-left: 1px solid #e8d4ca;
 }
 
 .block-item:first-child {
@@ -404,6 +416,7 @@
   font-size: 16px;
   line-height: 25px;
   text-align: center;
+  opacity: 0.85;
   letter-spacing: 0px;
 }
 
